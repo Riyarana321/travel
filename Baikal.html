@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/baikal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="main">
+        <div class="head">
+            <div>
+                <img src="img/logo-baikal.png" alt="" width="18%">
+
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Homes</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="Baikal.html">Default</a>
+                  <a href="#">Classic</a>
+                  <a href="#">Vedio Full height</a>
+                  <a href="#">Vedio Classic</a>
+                  <a href="#">Home Slider</a>
+                  <a href="#">Slider Classic</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">About</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">What we do</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Patners</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">News</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Archive</a>
+                    <a href="#">Standard</a>
+                    <a href="#">Featured</a>
+                    <a href="#">Slider</a>
+                </div>
+            </div>
+            <a href="#" style=" position: relative;top: 15px; margin-left: 20px;">Elements</a>
+            <div>
+                <button class="pur">Purchase</button>
+            </div>
+        </div>
+        <div class="stories">
+            <p>Success Stories</p>
+            <h2>START WITH YOU</h2>
+            <button>Learn more</button>
+        </div>
+    </section>
+
+    <div class="about">
+        <h2>A Bootstrap 4 website template for entrepreneurial community.</h2>
+        <p>Some of the coolest websites on earth are empowered by ThemeWagon. To continue the ambience, Baikal aims to help the rapidly growing entrepreneurial community to go online.It's loaded with many elements & features. See what you can do with it.</p>
+        <p style="color: black; font-style: italic;">For any questions please contact <a href="#" style="color: rgb(54, 179, 168); font-weight: normal;">info@yourdomain.com</a></p>
+    </div>
+
+    <div class="img">
+        <div>
+            <img src="img/about.jpg" alt="" width="85%">
+            <h4>ABOUT</h4>
+            <p>Find out about our organization, mission, our methods, and the results of our decades of advocacy.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+            <img src="img/action.jpg" alt="" width="90%">
+            <h4>PORTFOLIO</h4>
+            <p>Check out some of our featured portfolio from many successful projects, carefully curated by us.</p>
+           <a href="#">Learn More</a>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </div>
+    <div class="footer">
+        <p>459 BROADWAY, NEW YORK(212) 555-0123PLACEHOLDER@GMAIL.COM</p>
+    </div>
+    
+
+    <script>
+        function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
+        }
+    </script>
+</body>
+</html>
