@@ -16,23 +16,10 @@
     height: 650px;
     
 }
-
-.main2{
-    background-image: url(/img/header-01.jpg) ;
-    padding: 20px 130px;
-    background-position-x: 50%;
-    background-position-y: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-sizing: border-box;
-    width: 1350px;
-    height: 50px;
-    
-}
 .head{
     display: flex;  
     position: fixed;
-    color: white;
+   
 }
 .dropbtn {
     background-color: rgba(0, 0, 0, 0);
@@ -152,12 +139,3 @@
     text-align: center;
     padding: 50px;
   }
-
-  @keyframes head{
-    from{
-      background-color: rgba(0, 0, 0, 0);
-    } 
-    to{
-      background-color: black;
-    }
-  } 
